@@ -1,0 +1,31 @@
+<section class="container view-login ff-inter">
+  <header class="header">
+    <h2>Login</h2>
+  </header>
+  <form>
+    <label for="email">E-mail</label>
+    <input
+      type="email"
+      class="input"
+      id="email"
+      name="email"
+      placeholder="Informe seu endereço de e-mail"
+      [(ngModel)]="login.email"
+    >
+
+    <label for="senha">Senha</label>
+    <input
+      type="password"
+      class="input"
+      id="senha"
+      name="senha"
+      placeholder="Informe sua senha"
+    >
+
+    <div class="acoes">
+      <button (click)="chekLoginInputs(email, senha)" class="botao">Login</button>
+      <button (click)="criarConta()" class="botao">Criar Conta</button>
+    </div>
+
+  </form>
+</section>
